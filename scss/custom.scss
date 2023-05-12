@@ -1,0 +1,62 @@
+// Custom.scss
+// Option A: Include all of CoreUI
+
+@import '../node_modules/@coreui/coreui/scss/coreui';
+
+// Then add additional custom code here
+
+$charlie-coffee: #ffe5b9;
+$charlie-coffee-with-xtra-cream: #ffecd7;
+$theme-colors: (
+  'charlie-chip-coffee': $charlie-coffee-with-xtra-cream
+);
+
+#app {
+  background-color: $charlie-coffee;
+
+  font-family: Georgia, serif;
+  .minorHeader {
+    font-size: 22px;
+  }
+  .topHeader {
+    border-bottom: 4px solid #222;
+  }
+  .charlieHeader {
+    font-size: 30px;
+  }
+  .charlieFancy {
+    color: #d3842e;
+  }
+
+  .CCard {
+    border: 4px solid #222;
+    border-radius: 12px;
+  }
+  .responsive-wrapper {
+    display: flex;
+    max-width: 744px;
+    min-width: 250px;
+    width: 100%;
+  }
+  .maxwidth {
+    width: 100%;
+    background-color: #ffecd7;
+    color: #ffecd7;
+    border-color: #ffecd7;
+  }
+  .chip-imitator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .submit-btn {
+    background-color: #b46619;
+    border-color: #222;
+    width: 100%;
+    border: 4px solid #222;
+  }
+  .sk-input-border {
+    border: 1px solid #222;
+    border-color: #222;
+  }
+}
